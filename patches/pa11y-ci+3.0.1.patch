@@ -1,0 +1,13 @@
+diff --git a/node_modules/pa11y-ci/lib/pa11y-ci.js b/node_modules/pa11y-ci/lib/pa11y-ci.js
+index 481f815..9a63ac9 100644
+--- a/node_modules/pa11y-ci/lib/pa11y-ci.js
++++ b/node_modules/pa11y-ci/lib/pa11y-ci.js
+@@ -70,7 +70,7 @@ function pa11yCi(urls, options) {
+ 		// get passed into Pa11y – we don't want super verbose
+ 		// logs from it
+ 		// we also remove reporters because it's not part of pa11y options
+-		options = omit(options, ['log', 'reporters']);
++		// options = omit(options, ['log', 'reporters']);
+ 
+ 		await cycleReporters(reporters, 'beforeAll', urls);
+ 
